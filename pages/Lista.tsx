@@ -13,8 +13,8 @@ type Produto = {
   image: string;
 };
 
-const Lista = ({ navigation }) => {
-  const TelaAvalia = (productId) => navigation.navigate("Avaliação", { productId });
+const Lista = ({ navigation }: any) => {
+  const TelaAvalia = (productId: any) => navigation.navigate("Avaliação", { productId });
 
   const [products, setProducts] = useState<Produto[]>([]);
 
